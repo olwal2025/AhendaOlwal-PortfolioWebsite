@@ -1,6 +1,7 @@
 # Personal Portfolio Website
 
 Welcome to my Personal Portfolio Website! 
+
 This site showcases my skills, background and achievements in various fields; including Social Media Management, AI, Philanthropy and Web Development.
 
 ## Sections
