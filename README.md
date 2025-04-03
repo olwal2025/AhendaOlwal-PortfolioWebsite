@@ -19,25 +19,7 @@ Welcome to my Personal Portfolio Website! This site showcases my skills, backgro
 - Email and Phone Links
 
 ## Contact
-If you have any questions or would like to collaborate, feel free to connect with me via the contact form below:
-
-### Contact Form
-```html
-<form action="mailto:ahendaolwal@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
-
-    <input type="submit" value="Send">
-</form>
-```
-
-You can also reach me via:
+For questions and collaborations, you can reach me via;
 - **Email:** [ahendaolwal@gmail.com](mailto:ahendaolwal@gmail.com)
 - **LinkedIn:** [Catherine Olwal](https://www.linkedin.com/in/catherine-olwal-3a621458)
 - **GitHub:** [Your GitHub Profile](https://github.com/yourusername)
