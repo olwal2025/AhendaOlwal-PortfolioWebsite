@@ -1,8 +1,9 @@
 # Personal Portfolio Website
 
-Welcome to my Personal Portfolio Website! This site showcases my skills, background and achievements in various fields; including Social Media Management, AI, Philanthropy and Web Development.
+Welcome to my Personal Portfolio Website! 
+This site showcases my skills, background and achievements in various fields; including Social Media Management, AI, Philanthropy and Web Development.
 
-## Features
+## Sections
 - **About Me** – A brief introduction to who I am and what my interests are.
 - **Skills** – An overview of my expertise in different domains.
 - **Education** – Details of my academic background and certifications.
