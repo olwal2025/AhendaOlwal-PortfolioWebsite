@@ -1,43 +1,43 @@
-/* Google Fonts Importing */
-/* Replace Google Fonts with local fonts */
 @font-face {
     font-family: 'Playfair Display';
-    src: url('./Fonts/PlayfairOFL.txt') format('truetype');
+    src: url('./Fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./Fonts/MontserratREADME.txt') format('truetype');
+    src: url('./Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./Fonts/PoppinsOFL.txt') format('truetype');
+    src: url('./Fonts/Poppins-Bold.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lora';
-    src: url('./Fonts/Lora.txt') format('truetype');
+    src: url('./Fonts/Lora-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
-/* General Color Palette */
 :root {
     --primary-color: #008080;
-    --accent-color: #FFD700; 
-    --highlight-color: #FFDB58; 
-    --background-color: #FFFFFF; 
-    --text-color: #333333; 
-    --detail-color: #000000; 
-    --navbar-bg: rgba(0, 128, 128, 0.8); 
-    --button-bg: #FFD700; 
-    --button-hover-bg: #008080; 
-    --link-color: #008080; 
-    --link-hover-color: #004C4C; 
-    --coral-color: coral; 
-    --deep-white: rgba(255, 255, 255, 0.9); 
+    --accent-color: #FFD700;
+    --highlight-color: #FFDB58;
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --detail-color: #000000;
+    --navbar-bg: rgba(0, 128, 128, 0.8);
+    --button-bg: #FFD700;
+    --button-hover-bg: #008080;
+    --link-color: #008080;
+    --link-hover-color: #004C4C;
+    --coral-color: coral;
+    --deep-white: rgba(255, 255, 255, 0.9);
 }
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -45,42 +45,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Body Style */
 body {
-    background-image: url('Images/Background.png'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    color: var(--text-color); 
+    background: url('Images/Background.png') center/cover no-repeat fixed;
+    color: var(--text-color);
     text-align: center;
     line-height: 1.6;
-    padding-top: 70px; 
+    padding-top: 70px;
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--navbar-bg); 
+    background: var(--navbar-bg);
     padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar img {
-    width: 140px; 
+    width: 140px;
     cursor: pointer;
 }
 
 .navbar ul {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .navbar ul li {
@@ -91,20 +85,19 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--background-color); 
+    color: var(--background-color);
     transition: color 0.4s ease, transform 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: var(--highlight-color); 
-    transform: scale(1.1); 
+    color: var(--highlight-color);
+    transform: scale(1.1);
 }
 
-/* Headers */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 h1 {
@@ -117,77 +110,74 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    color: var(--highlight-color); 
+    color: var(--highlight-color);
 }
 
-/* Section Styling */
 section {
     max-width: 900px;
     width: 90%;
     margin: 100px auto 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.95); 
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section */
 #about {
-    display: flex; 
-    align-items: flex-start; 
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     text-align: left;
-    gap: 30px; 
-    padding: 30px; 
+    gap: 30px;
+    padding: 30px;
 }
 
 #about .extra-image {
-    flex: 0 0 25%; 
-    max-width: 200px; 
+    flex: 0 0 25%;
+    max-width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #about .content h1 {
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
     font-family: 'Playfair Display', serif;
-    color: var(--primary-color); 
-    margin-bottom: 12px; 
+    color: var(--primary-color);
+    margin-bottom: 12px;
 }
 
 #about .content h2 {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color); 
-    margin-bottom: 10px; 
+    color: var(--text-color);
+    margin-bottom: 10px;
 }
 
 #about .content h3 {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-    color: var(--highlight-color); 
-    margin-bottom: 15px; 
+    color: var(--highlight-color);
+    margin-bottom: 15px;
 }
 
 #about .content p {
-    font-size: 1rem; 
+    font-size: 1rem;
     font-family: 'Lora', serif;
-    color: var(--text-color); 
-    line-height: 1.5; 
-    margin-bottom: 20px; 
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 #about .content h1 {
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 #about .content h2,
 #about .content h3 {
-    color: coral; 
+    color: var(--coral-color);
 }
 
-/* Paragraph Styling */
 p {
     font-size: 1.2rem;
     font-family: 'Lora', serif;
@@ -195,13 +185,11 @@ p {
     padding: 10px;
 }
 
-/* Highlighted Text */
 .highlight, .highlight-name, .highlight-siti {
     font-weight: bold;
     color: indianred;
 }
 
-/* Image Styling */
 .extra-image {
     max-width: 100%;
     height: auto;
@@ -210,13 +198,12 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* CTA and Home Buttons */
 .cta-button, .home-button {
     display: inline-block;
-    padding: 12px 25px; 
+    padding: 12px 25px;
     margin-top: 15px;
-    background: var(--button-bg); 
-    color: var(--detail-color); 
+    background: var(--button-bg);
+    color: var(--detail-color);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -224,75 +211,89 @@ p {
 }
 
 .cta-button:hover, .home-button:hover {
-    background: var(--button-hover-bg); 
-    transform: translateY(-3px); 
+    background: var(--button-hover-bg);
+    transform: translateY(-3px);
 }
 
-/* Skills Section */
 #skills h3 {
-    color: coral; 
+    color: var(--coral-color);
 }
 
 #skills ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
 
-#skills ul li {
-    background: var(--detail-color); 
-    color: rgba(255, 255, 255, 0.9); 
-    padding: 10px;
-    margin: 5px 0;
-    border-left: 5px solid var(--button-bg); 
+.tech-skills {
+    list-style: none;
+    padding: 0;
 }
 
-/* Education Section */
+.tech-skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--accent-color);
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.tech-skills span {
+    color: var(--detail-color);
+    flex: 1;
+}
+
+
 #education ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
 
 #education h3 {
-    color: coral; 
+    color: var(--coral-color);
 }
 
 #education p,
 #education ul li {
-    color: var(--text-color); 
+    color: var(--text-color);
 }
 
-/* Projects Section */
 #projects ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
 
 #projects ul li a {
-    color: coral; 
-    text-decoration: none; 
-    transition: color 0.3s ease; 
+    color: var(--coral-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 #projects ul li a:hover {
-    color: var(--link-hover-color); 
+    color: var(--link-hover-color);
 }
 
-/* Interests Section */
 #interests h3 {
-    color: coral; 
+    color: var(--coral-color);
 }
 
 #interests p {
-    color: var(--text-color);  
+    color: var(--text-color);
 }
 
-/* Contact Section */
 #contact p,
 #contact a {
-    color: coral; 
+    color: var(--coral-color);
 }
 
-/* Contact Form Styling */
 form {
     margin-top: 20px;
     display: flex;
@@ -306,7 +307,8 @@ form label {
     text-align: left;
 }
 
-form input, form textarea {
+form input, 
+form textarea {
     padding: 10px;
     border: 1px solid var(--detail-color);
     border-radius: 5px;
@@ -338,20 +340,72 @@ form button:hover {
     transform: translateY(-3px);
 }
 
-/* Responsive Design */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--navbar-bg);
+    color: var(--background-color);
+    font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         text-align: center;
     }
+
     .navbar ul {
         flex-direction: column;
         padding-top: 10px;
     }
+
     .navbar ul li {
         margin: 5px 0;
     }
+
     section {
-        margin: 80px auto 20px auto; 
+        margin: 80px auto 20px auto;
     }
+}
+
+.interest-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+}
+
+.interest-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--accent-color);
+}
+
+.interest-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.interest-box h3 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+}
+
+.interest-box .icon-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.interest-box p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
