@@ -110,17 +110,34 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <p><strong>Phone:</strong> <a href="tel:+254718513160">+254 718 513 160</a></p>
-        <p><strong>Email:</strong> <a href="mailto:ahendaolwal@gmail.com">ahendaolwal@gmail.com</a></p>
+        <form id="contact-form" action="/send-message" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+        <p>
+            <img src="./Images/Call.png" alt="Phone Icon" style="width: 20px; vertical-align: middle;">
+            <a href="tel:+254718513160">+254 718 513 160</a>
+        </p>
+        <p>
+            <img src="./Images/Mail.png" alt="Email Icon" style="width: 20px; vertical-align: middle;">
+            <a href="mailto:ahendaolwal@gmail.com">ahendaolwal@gmail.com</a>
+        </p>
         <p>
             <a href="https://www.linkedin.com/in/catherine-olwal-3a621458" target="_blank">
-                <i class="fab fa-linkedin" style="font-size: 2rem;"></i>
+                <img src="./Images/LinkedIn.svg" alt="LinkedIn Icon" style="width: 30px;">
             </a>
             <a href="https://github.com/olwal2025" target="_blank">
-                <i class="fab fa-github" style="font-size: 2rem;"></i>
+                <img src="./Images/github-brands.svg" alt="GitHub Icon" style="width: 30px;">
             </a>
         </p>
-        <a href="mailto:ahendaolwal@gmail.com" class="cta-button">Hire Me</a>
     </section> 
 </body>
 </html>

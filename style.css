@@ -1,5 +1,24 @@
 /* Google Fonts Importing */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500&family=Lora:wght@400&family=Poppins:wght@400&display=swap');
+/* Replace Google Fonts with local fonts */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./Fonts/PlayfairOFL.txt') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Fonts/MontserratREADME.txt') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Fonts/PoppinsOFL.txt') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./Fonts/Lora.txt') format('truetype');
+}
 
 /* General Color Palette */
 :root {
@@ -271,6 +290,52 @@ p {
 #contact p,
 #contact a {
     color: coral; 
+}
+
+/* Contact Form Styling */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid var(--detail-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+}
+
+form button {
+    align-self: flex-start;
+    padding: 12px 25px;
+    background: var(--button-bg);
+    color: var(--detail-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: var(--button-hover-bg);
+    transform: translateY(-3px);
 }
 
 /* Responsive Design */
