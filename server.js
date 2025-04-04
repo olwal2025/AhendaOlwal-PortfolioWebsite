@@ -5,32 +5,28 @@ const nodemailer = require('nodemailer');
 const app = express();
 const PORT = 3000;
 
-// Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static('public')); // Serve static files (e.g., CSS, images)
+app.use(express.static('public'));
 
-// Contact form route
 app.post('/send-message', (req, res) => {
     const { name, email, message } = req.body;
 
-    // Configure nodemailer
     const transporter = nodemailer.createTransport({
-        service: 'gmail', // Use your email service provider
+        service: 'gmail',
         auth: {
-            user: 'your-email@gmail.com', // Replace with your email
-            pass: 'your-email-password' // Replace with your email password or app password
+            user: 'your-email@gmail.com',
+            pass: 'your-email-password'
         }
     });
 
     const mailOptions = {
         from: email,
-        to: 'your-email@gmail.com', // Replace with your email
+        to: 'your-email@gmail.com',
         subject: `New message from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
 
-    // Send email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Error sending email:', error);
@@ -42,7 +38,6 @@ app.post('/send-message', (req, res) => {
     });
 });
 
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
