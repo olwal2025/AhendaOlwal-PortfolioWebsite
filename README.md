@@ -15,16 +15,17 @@ This site showcases my skills, background and achievements in various fields; in
 ## Technologies Used
 - HTML5
 - CSS3
+- Javascript
 - Google Fonts
-- Font Awesome
-- Responsive Design
-- Email and Phone Links
+- Responsive Images
+- SVG Icons
+- Git for version control
 
 ## Contact
 For questions and collaborations, you can reach me via;
 - **Email:** [ahendaolwal@gmail.com](mailto:ahendaolwal@gmail.com)
 - **LinkedIn:** [Catherine Olwal](https://www.linkedin.com/in/catherine-olwal-3a621458)
-- **GitHub:** [Your GitHub Profile](https://github.com/yourusername)
+- **GitHub:** [GitHub Profile](https://github.com/yourusername)
 - **Phone:** +254 718 513 160
 
 ---
