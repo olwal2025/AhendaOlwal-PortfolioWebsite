@@ -25,3 +25,15 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         console.error('Error:', error);
     }
 });
+
+// Hamburger menu toggle script
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function () {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+        hamburger.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('active');
+    });
+});
