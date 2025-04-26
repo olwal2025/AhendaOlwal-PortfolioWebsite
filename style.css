@@ -45,6 +45,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: url('Images/Background.png') center/cover no-repeat fixed;
     color: var(--text-color);
@@ -266,18 +270,42 @@ p {
     color: var(--text-color);
 }
 
-#projects ul {
-    list-style: none;
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 0;
+    margin: 0;
 }
 
-#projects ul li a {
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card a {
     color: var(--coral-color);
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
-#projects ul li a:hover {
+.project-card a:hover {
     color: var(--link-hover-color);
 }
 

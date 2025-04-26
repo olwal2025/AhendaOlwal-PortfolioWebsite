@@ -8,7 +8,7 @@ This site showcases my skills, background and achievements in various fields; in
 - **About Me** – A brief introduction to who I am and what my interests are.
 - **Skills** – An overview of my expertise in different domains.
 - **Education** – Details of my academic background and certifications.
-- **Projects** – A showcase of the projects I have worked on.
+- **Projects** – A showcase of the projects I have worked on, including a [Sample Pitch Deck Presentation - Fictional Business](https://aboutahenda.my.canva.site/catherine-olwal-pitch-deck-presentation).
 - **Interests** – A glimpse into my hobbies and passions.
 - **Contact** – How to reach me for collaborations and inquiries.
 
