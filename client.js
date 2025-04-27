@@ -1,13 +1,19 @@
+// Handle contact form submission
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // Collect form data
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    // Define the form response element
+    const formResponse = document.getElementById('form-response');
 
     try {
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            message: document.getElementById('message').value
-        };
-
+        // Send the form data to the server
         const response = await fetch('/send-message', {
             method: 'POST',
             headers: {
@@ -16,24 +22,22 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
             body: JSON.stringify(formData)
         });
 
+        // Check if the response is successful
+        if (!response.ok) {
+            throw new Error('Failed to send message');
+        }
+
         const data = await response.text();
-        document.getElementById('form-response').textContent = data;
+        if (formResponse) {
+            formResponse.textContent = data; // Display success message
+        }
+
+        // Clear the form after submission
         document.getElementById('contact-form').reset();
     } catch (error) {
-        document.getElementById('form-response').textContent = 
-            'Error sending message. Please try again.';
-        console.error('Error:', error);
+        if (formResponse) {
+            formResponse.textContent = 'Error sending message. Please try again.'; // Display error message
+        }
+        console.error('Error:', error); // Log the error for debugging purposes
     }
-});
-
-// Hamburger menu toggle script
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', function () {
-        const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-        hamburger.setAttribute('aria-expanded', !expanded);
-        navMenu.classList.toggle('active');
-    });
 });

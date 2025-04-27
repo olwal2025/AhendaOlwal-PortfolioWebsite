@@ -1,270 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Ahenda Olwal-Professional Portfolio" />
-    <title>Ahenda Olwal - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahenda Olwal - Professional Portfolio" />
+  <title>Ahenda Olwal - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="client.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <img src="./Images/Logo.png" alt="Logo" />
-            <nav>
-                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
+            <!-- Logo -->
+            <img src="./Images/Logo.png" alt="Ahenda Olwal Logo" class="logo" />
+    
+            <!-- Navigation with aria-label for accessibility -->
+            <nav aria-label="Main Navigation">
                 <ul id="nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#interests">INTERESTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="index.html" aria-label="Home">HOME</a></li>
+                    <li><a href="#about" aria-label="About Me">ABOUT</a></li>
+                    <li><a href="#skills" aria-label="My Skills">SKILLS</a></li>
+                    <li><a href="#education" aria-label="My Education">EDUCATION</a></li>
+                    <li><a href="#projects" aria-label="My Projects">PROJECTS</a></li>
+                    <li><a href="#interests" aria-label="My Interests">INTERESTS</a></li>
+                    <li><a href="#contact" aria-label="Contact Me">CONTACT</a></li>
                 </ul>
             </nav>
+    
+            <!-- Hamburger menu for mobile (optional but recommended for responsive design) -->
+            <div class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
-
+      
     <section id="about">
         <div class="content">
             <h1>About Me</h1>
-            <h2>Hello! I am Ahenda Olwal</h2>
-            <h3>Social Impact Tech Advocate</h3>
-            <p>
-                I leverage technology to drive social change, bridge knowledge gaps and create innovative solutions for community impact.
-            </p>
+            <h2>Hello! I am <span class="highlight-name">Ahenda Olwal</span></h2>
+            <h3><span class="highlight-sita">S</span>ocial <span class="highlight-sita">I</span>mpact <span class="highlight-sita">T</span>ech <span class="highlight-sita">A</span>dvocate</h3>
+            <p>I leverage technology to drive social change, bridge knowledge gaps and create innovative solutions for community impact.</p>
         </div>
-        <img src="Images/Girl.png" alt="About Me Image" class="extra-image" />
-    </section>
+        
+        <!-- About Me Image -->
+        <div class="image-container">
+            <img src="Images/Girl.png" alt="About Me Image" class="extra-image" />
+        </div>
+    </section>    
 
     <section id="skills">
         <h2>Skills</h2>
+        
+        <!-- Technical Skills -->
         <h3>Technical Skills</h3>
         <ul class="tech-skills">
-            <li>
-                <img src="./Images/HTML.png" alt="HTML Icon" class="tech-icon" />
-                <span>Advanced beginner proficiency in writing structured and semantic HTML for responsive web development.</span>
-            </li>
-            <li>
-                <img src="./Images/CSS.png" alt="CSS Icon" class="tech-icon" />
-                <span>Skilled in applying styles, layouts and animations to enhance user experience.</span>
-            </li>
-            <li>
-                <img src="./Images/Python.png" alt="Python Icon" class="tech-icon" />
-                <span>Capable of scripting, automation and data manipulation using Python.</span>
-            </li>
-            <li>
-                <img src="./Images/Database.png" alt="SQL Icon" class="tech-icon" />
-                <span>Knowledgeable in writing queries and managing relational databases.</span>
-            </li>
+          <li>
+            <img src="./Images/HTML.png" alt="HTML Icon" class="tech-icon" />
+            <span>Advanced beginner proficiency in writing structured and semantic HTML for responsive web development.</span>
+          </li>
+          <li>
+            <img src="./Images/CSS.png" alt="CSS Icon" class="tech-icon" />
+            <span>Skilled in applying styles, layouts and animations to enhance user experience.</span>
+          </li>
+          <li>
+            <img src="./Images/Python.png" alt="Python Icon" class="tech-icon" />
+            <span>Capable of scripting, automation and data manipulation using Python.</span>
+          </li>
+          <li>
+            <img src="./Images/Database.png" alt="SQL Icon" class="tech-icon" />
+            <span>Knowledgeable in writing queries and managing relational databases.</span>
+          </li>
         </ul>
+    
+        <!-- Professional Skills -->
         <h3>Professional Skills</h3>
         <div class="skills-container">
-            <div class="interest-box">
-                <strong>Social Media Strategy and Analytics:</strong> Expertise in content planning, audience engagement and performance metrics analysis.
-            </div>
-            <div class="interest-box">
-                <strong>Data Analysis and Visualization:</strong> Skilled in extracting insights from data and presenting findings through reports and dashboards.
-            </div>
-            <div class="interest-box">
-                <strong>Project and Community Management:</strong> Experienced in coordinating initiatives, leading teams and fostering community engagement.
-            </div>
-            <div class="interest-box">
-                <strong>Research and Report Writing:</strong> Strong ability to conduct in-depth research and compile detailed, data-driven reports.
-            </div>
-            <div class="interest-box">
-                <strong>Communication and Collaboration:</strong> Skilled in written and verbal communication, cross-functional and cross-cultural teamwork and stakeholder management.
-            </div>
-            <div class="interest-box">
-                <strong>Attention to Detail:</strong> Ensures accuracy, consistency and quality in tasks; including data management and content creation.
-            </div>
-            <div class="interest-box">
-                <strong>Source Control:</strong> Advanced beginner proficiency in Git for version control and collaborative coding.
-            </div>
-            <div class="interest-box">
-                <strong>Creativity and Critical Thinking:</strong> Ability to develop innovative solutions, analyze challenges and implement strategic improvements.
-            </div>
+          <div class="interest-box"><strong>Social Media Strategy and Analytics:</strong> Expertise in content planning, audience engagement, and performance metrics analysis.</div>
+          <div class="interest-box"><strong>Data Analysis and Visualization:</strong> Skilled in extracting insights from data and presenting findings through reports and dashboards.</div>
+          <div class="interest-box"><strong>Project and Community Management:</strong> Experienced in coordinating initiatives, leading teams, and fostering community engagement.</div>
+          <div class="interest-box"><strong>Research and Report Writing:</strong> Strong ability to conduct in-depth research and compile detailed, data-driven reports.</div>
+          <div class="interest-box"><strong>Communication and Collaboration:</strong> Skilled in written and verbal communication, cross-functional and cross-cultural teamwork, and stakeholder management.</div>
+          <div class="interest-box"><strong>Attention to Detail:</strong> Ensures accuracy, consistency, and quality in tasks; including data management and content creation.</div>
+          <div class="interest-box"><strong>Source Control:</strong> Advanced beginner proficiency in Git for version control and collaborative coding.</div>
+          <div class="interest-box"><strong>Creativity and Critical Thinking:</strong> Ability to develop innovative solutions, analyze challenges, and implement strategic improvements.</div>
         </div>
     </section>
-
-    <section id="education">
+    
+    <section id="education"> 
         <h2>Education</h2>
         <p>Diploma in Community Development and Counselling - Technical University of Mombasa</p>
         <p><a href="Certificates/Diploma Olwal Catherine.pdf" target="_blank" class="cta-button">View Diploma Certificate</a></p>
+    
         <h3>Certifications</h3>
         <div class="certificate-gallery">
-            <div class="certificate-card">
-                <h4>Generative AI Course- LinkedIn Learning</h4>
-                <a href="Certificates/Generative AI Course Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>AI Career Essentials - ALX</h4>
-                <a href="Certificates/ALX Certificate PDF.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Take the Lead Program (Mexoxo) - Cornell University</h4>
-                <a href="Certificates/Cornell University Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Africa Rising - Africa Leadership University</h4>
-                <a href="Certificates/Africa Rising Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Young African Leaders Initiative</h4>
-                <a href="Certificates/YALI Certificates.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Transparency and Good Governance - I Reach Out My Hand Africa Certificate</h4>
-                <a href="Certificates/I Reach Out My Hand Africa Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Google Spreadsheet - Simplilearn</h4>
-                <a href="Certificates/Google Spreadsheet Olwal Catherine.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Certificate of Language Ability - Rosetta Stone</h4>
-                <a href="Certificates/Certificate of Language Ability.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Attention to Detail - TestDome</h4>
-                <a href="https://www.testdome.com/certificates/7b612b89c7d44a3da16cd502d1bf0008" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>International Computer Driving License - Institute of Advanced Technology</h4>
-                <a href="Certificates/ICDL Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h4>Research Ethics Training Curriculum - FHI 360</h4>
-                <a href="Certificates/RETC Olwal Catherine.pdf" target="_blank" class="cta-button">View Certificate</a>
-            </div>
+          <div class="certificate-card">
+            <h4>Generative AI Course - LinkedIn Learning</h4>
+            <a href="Certificates/Generative AI Course Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>AI Career Essentials - ALX</h4>
+            <a href="Certificates/ALX Certificate PDF.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Take the Lead Program (Mexoxo) - Cornell University</h4>
+            <a href="Certificates/Cornell University Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Africa Rising - Africa Leadership University</h4>
+            <a href="Certificates/Africa Rising Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Young African Leaders Initiative</h4>
+            <a href="Certificates/YALI Certificates.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Transparency and Good Governance - I Reach Out My Hand Africa</h4>
+            <a href="Certificates/I Reach Out My Hand Africa Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Google Spreadsheet - Simplilearn</h4>
+            <a href="Certificates/Google Spreadsheet Olwal Catherine.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Certificate of Language Ability - Rosetta Stone</h4>
+            <a href="Certificates/Certificate of Language Ability.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Attention to Detail - TestDome</h4>
+            <a href="https://www.testdome.com/certificates/7b612b89c7d44a3da16cd502d1bf0008" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>International Computer Driving License - Institute of Advanced Technology</h4>
+            <a href="Certificates/ICDL Certificate.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+            <h4>Research Ethics Training Curriculum - FHI 360</h4>
+            <a href="Certificates/RETC Olwal Catherine.pdf" target="_blank" class="cta-button">View Certificate</a>
+          </div>
         </div>
-        <a href="https://drive.google.com/file/d/11WdsZ9XzdW8lcyj_8Blusly3gedBQCJJ/view?usp=sharing" target="_blank">Download My CV</a>
+        <a href="https://drive.google.com/file/d/11WdsZ9XzdW8lcyj_8Blusly3gedBQCJJ/view?usp=sharing" target="_blank" class="cta-button">Download My CV</a>
     </section>
-
-    <section id="projects">
+    
+    <section id="projects"> 
         <h2>Projects</h2>
         <div class="projects-container">
-            <div class="project-card">
-                <a href="https://teachablemachine.withgoogle.com/models/wa0r6FmxP/" target="_blank" rel="noopener noreferrer">AI Model</a>
-                <p>A machine learning model built using Teachable Machine for image recognition tasks.</p>
-            </div>
-            <div class="project-card">
-                <a href="https://infogram.com/average-salaries-per-job-title-1h9j6q7017nw54g?live" target="_blank" rel="noopener noreferrer">Data Visualization: Salary Report</a>
-                <p>Interactive data visualization showing average salaries across various job titles.</p>
-            </div>
-            <div class="project-card">
-                <a href="https://ahendaolwal.wixsite.com/strategic-philanthro" target="_blank" rel="noopener noreferrer">Strategic Philanthropy Website</a>
-                <p>A sample website for a strategic philanthropy company.</p>
-            </div>
-            <div class="project-card">
-                <a href="https://github.com/olwal2025/Python-Calculator.git" target="_blank" rel="noopener noreferrer">Python Calculator</a>
-                <p>A simple calculator application built with Python for basic arithmetic operations.</p>
-            </div>
-            <div class="project-card">
-                <a href="https://github.com/PLP-WebTechnologies/feb-2025-introduction-to-css-olwal2025.git" target="_blank" rel="noopener noreferrer">CSS Styling Project</a>
-                <p>A project demonstrating advanced CSS styling techniques and responsive design.</p>
-            </div>
-            <div class="project-card">
-                <a href="https://github.com/PLP-Database-Design/wk-3a-olwal2025.git" target="_blank" rel="noopener noreferrer">SQL Database Design</a>
-                <p>Design and implementation of relational database schemas using SQL.</p>
-            </div>
-            <div class="project-card">
-                <a href="https://aboutahenda.my.canva.site/catherine-olwal-pitch-deck-presentation" target="_blank" rel="noopener noreferrer">Sample Pitch Deck Presentation - Fictional Business</a>
-                <p>A pitch deck presentation created for a fictional business project.</p>
-            </div>
+          <div class="project-card">
+            <a href="https://teachablemachine.withgoogle.com/models/wa0r6FmxP/" target="_blank" class="project-link">AI Model</a>
+            <p>A machine learning model built using Teachable Machine for image recognition tasks.</p>
+          </div>
+          <div class="project-card">
+            <a href="https://infogram.com/average-salaries-per-job-title-1h9j6q7017nw54g?live" target="_blank" class="project-link">Data Visualization: Salary Report</a>
+            <p>Interactive data visualization showing average salaries across various job titles.</p>
+          </div>
+          <div class="project-card">
+            <a href="https://ahendaolwal.wixsite.com/strategic-philanthro" target="_blank" class="project-link">Strategic Philanthropy Website</a>
+            <p>A sample website for a strategic philanthropy company.</p>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/olwal2025/Python-Calculator.git" target="_blank" class="project-link">Python Calculator</a>
+            <p>A simple calculator application built with Python for basic arithmetic operations.</p>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/PLP-WebTechnologies/feb-2025-introduction-to-css-olwal2025.git" target="_blank" class="project-link">CSS Styling Project</a>
+            <p>A project demonstrating advanced CSS styling techniques and responsive design.</p>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/PLP-Database-Design/wk-3a-olwal2025.git" target="_blank" class="project-link">SQL Database Design</a>
+            <p>Design and implementation of relational database schemas using SQL.</p>
+          </div>
+          <div class="project-card">
+            <a href="https://aboutahenda.my.canva.site/catherine-olwal-pitch-deck-presentation" target="_blank" class="project-link">Sample Pitch Deck Presentation - Fictional Business</a>
+            <p>A pitch deck presentation created for a fictional business project.</p>
+          </div>
         </div>
-    </section>
+    </section>    
 
     <section id="interests">
         <h2>Interests</h2>
-
-        <div class="interest-box">
-            <div class="icon-title-container">
-                <img src="./Images/Tech Innovation.png" alt="Tech Innovation Icon" class="interest-icon" />
-                <h3>Tech Innovations</h3>
-            </div>
-            <p>I am passionate about leveraging technology to solve real world problems. Additionally, the rapid advancements in AI, automation and data analytics excite me because they open new possibilities for efficiency, creativity and impact. I enjoy exploring how emerging technologies can enhance productivity, improve digital experiences and drive meaningful change.</p>
+        <div class="interests-container">
+          <div class="interest-box">
+            <img src="./Images/Tech Innovation.png" alt="Tech Innovation Icon" class="interest-icon" />
+            <h3>Tech Innovations</h3>
+            <p>I am passionate about leveraging technology to solve real world problems and explore emerging technologies.</p>
+          </div>
+          <div class="interest-box">
+            <img src="./Images/Artificial Intelligence.png" alt="AI Icon" class="interest-icon" />
+            <h3>Artificial Intelligence (AI)</h3>
+            <p>AI fascinates me because of its potential to revolutionize industries, improve accessibility and optimize workflows for social good.</p>
+          </div>
+          <div class="interest-box">
+            <img src="./Images/Social Impact.png" alt="Social Impact Icon" class="interest-icon" />
+            <h3>Social Impact</h3>
+            <p>I believe in using technology, data and advocacy to address societal issues in education, healthcare and economic empowerment.</p>
+          </div>
+          <div class="interest-box">
+            <img src="./Images/Green Space Innovation.png" alt="Green Space Icon" class="interest-icon" />
+            <h3>Green Space Innovation</h3>
+            <p>Green space innovation excites me because it combines technology, urban planning and sustainability to restore natural ecosystems.</p>
+          </div>
+          <div class="interest-box">
+            <img src="./Images/Philanthropy.png" alt="Philanthropy Icon" class="interest-icon" />
+            <h3>Philanthropy</h3>
+            <p>Philanthropy aligns with my vision of creating lasting impact through strategic giving and data-driven decision making.</p>
+          </div>
+          <div class="interest-box">
+            <img src="./Images/Golf.png" alt="Golf Icon" class="interest-icon" />
+            <h3>Golf</h3>
+            <p>Golf is a sport that builds discipline, patience and resilience while fostering professional networking opportunities.</p>
+          </div>
         </div>
-
-        <div class="interest-box">
-            <div class="icon-title-container">
-                <img src="./Images/Artificial Intelligence.png" alt="AI Icon" class="interest-icon" />
-                <h3>Artificial Intelligence (AI)</h3>
-            </div>
-            <p>AI fascinates me because of its potential to revolutionize industries; from healthcare and education to business and social good. I am particularly interested in ethical AI, machine learning applications and how AI can be used to enhance decision-making, optimize workflows and improve accessibility for underserved communities.</p>
-        </div>
-
-        <div class="interest-box">
-            <div class="icon-title-container">
-                <img src="./Images/Social Impact.png" alt="Social Impact Icon" class="interest-icon" />
-                <h3>Social Impact</h3>
-            </div>
-            <p>Creating meaningful change through innovation is at the core of my professional journey. I believe in using data, technology and advocacy to address pressing societal issues; especially in education, healthcare and economic empowerment. My background in community development fuels my drive to implement sustainable and scalable solutions.</p>
-        </div>
-
-        <div class="interest-box">
-            <div class="icon-title-container">
-                <img src="./Images/Green Space Innovation.png" alt="Green Space Icon" class="interest-icon" />
-                <h3>Green Space Innovation</h3>
-            </div>
-            <p>I am very captivated by sustainable development and environmental conservation. Green Space Innovation excites me because it combines urban planning, technology and eco-friendly solutions to create sustainable environments. Through smart city planning, sustainable agriculture or nature conservation projects; I am eager to contribute to initiatives that protect and restore natural ecosystems.</p>
-        </div>
-
-        <div class="interest-box">
-            <div class="icon-title-container">
-                <img src="./Images/Philanthropy.png" alt="Philanthropy Icon" class="interest-icon" />
-                <h3>Philanthropy</h3>
-            </div>
-            <p>Giving back and driving positive change through philanthropy aligns with my values and long term vision. I am interested in strategic philanthropy; using data-driven approaches to maximize the impact of charitable initiatives. My goal is to help organizations and individuals make informed decisions on funding and resource allocation for maximum social good.</p>
-        </div>
-
-        <div class="interest-box">
-            <div class="icon-title-container">
-                <img src="./Images/Golf.png" alt="Golf Icon" class="interest-icon" />
-                <h3>Golf</h3>
-            </div>
-            <p>Golf is more than just a sport for me; it is a blend of discipline, strategy and relaxation. I enjoy how it challenges mental focus, patience and resilience; all of which are crucial in both personal and professional growth. Additionally, golf provides networking opportunities; fostering connections with like-minded individuals in various industries.</p>
-        </div>
-    </section>
+    </section>    
 
     <section id="contact">
         <h2>Contact</h2>
         <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required />
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="cta-button">Send Message</button>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          
+          <button type="submit" class="cta-button">Send Message</button>
         </form>
-        <div id="form-response"></div>
-        <script src="client.js" defer></script>
-        <p>
-            <img src="./Images/Call.png" alt="Phone Icon" style="width: 20px; vertical-align: middle;" />
-            <a href="tel:+254718513160">+254 718 513 160</a>
-        </p>
-        <p>
-            <img src="./Images/Mail.png" alt="Email Icon" style="width: 20px; vertical-align: middle;" />
-            <a href="mailto:ahendaolwal@gmail.com">ahendaolwal@gmail.com</a>
-        </p>
-        <p>
+    
+        <div class="contact-info">
+          <p><img src="./Images/Call.png" alt="Phone Icon" /> <a href="tel:+254718513160">+254 718 513 160</a></p>
+          <p><img src="./Images/Mail.png" alt="Email Icon" /> <a href="mailto:ahendaolwal@gmail.com">ahendaolwal@gmail.com</a></p>
+          <p>
             <a href="https://www.linkedin.com/in/catherine-olwal-3a621458" target="_blank">
-                <img src="./Images/LinkedIn.svg" alt="LinkedIn Icon" style="width: 30px;" />
+              <img src="./Images/LinkedIn.svg" alt="LinkedIn Icon" />
             </a>
             <a href="https://github.com/olwal2025" target="_blank">
-                <img src="./Images/github-brands.svg" alt="GitHub Icon" style="width: 30px;" />
+              <img src="./Images/github-brands.svg" alt="GitHub Icon" />
             </a>
-        </p>
-    </section>
+          </p>
+        </div>
+    </section>    
 
     <footer>
         <p>&copy; 2025 Ahenda Olwal. All rights reserved.</p>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
+    
