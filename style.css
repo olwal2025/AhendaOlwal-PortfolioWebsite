@@ -54,7 +54,7 @@ body {
     color: var(--text-color);
     text-align: center;
     line-height: 1.6;
-    padding-top: 90px; /* Increased padding to prevent content being hidden behind navbar */
+    padding-top: 75px; /* Adjusted padding to match smaller navbar */
 }
 
 .navbar {
@@ -62,7 +62,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: var(--navbar-bg);
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reduced padding to decrease navbar height */
     position: fixed;
     width: 100%;
     top: 0;
@@ -72,7 +72,7 @@ body {
 }
 
 .navbar img {
-    width: 140px;
+    width: 100px; /* Reduced logo size */
     cursor: pointer;
 }
 
