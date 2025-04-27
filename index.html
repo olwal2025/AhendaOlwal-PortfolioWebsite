@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ahenda Olwal - Professional Portfolio" />
+  <meta name="description" content="Ahenda Olwal’s portfolio showcasing tech, social impact, and innovation." />
+  <meta name="keywords" content="portfolio, tech, social impact, AI, social media, innovation" />
+  <meta name="author" content="Ahenda Olwal" />
+  <meta name="robots" content="index, follow" />
   <title>Ahenda Olwal - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script src="client.js" defer></script>
 </head>
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <header>
         <div class="navbar">
             <!-- Logo -->
-            <img src="./Images/Logo.png" alt="Ahenda Olwal Logo" class="logo" />
+<img src="./Images/Logo.png" alt="Ahenda Olwal Logo" class="logo" />
     
             <!-- Navigation with aria-label for accessibility -->
             <nav aria-label="Main Navigation">
@@ -36,40 +44,42 @@
         </div>
     </header>
       
-    <section id="about">
-        <div class="content">
-            <h1>About Me</h1>
-            <h2>Hello! I am <span class="highlight-name">Ahenda Olwal</span></h2>
-            <h3><span class="highlight-sita">S</span>ocial <span class="highlight-sita">I</span>mpact <span class="highlight-sita">T</span>ech <span class="highlight-sita">A</span>dvocate</h3>
-            <p>I leverage technology to drive social change, bridge knowledge gaps and create innovative solutions for community impact.</p>
+<section id="about" class="about-section" data-aos="fade-up">
+    <div class="content">
+        <h1>About Me</h1>
+        <h2>Hello! I am <span class="highlight-name">Ahenda Olwal</span></h2>
+        <h3>Social Impact Tech Advocate</h3>
+        <p>
+            I leverage technology to drive social change, bridge knowledge gaps and create innovative solutions for community impact.
+        </p>
+        <div class="tagline-section">
+            <h1>Empowering Africa's future through tech-driven sustainability.</h1>
+            <p>Innovative solutions. Sustainable progress. Transformative impact.</p>
         </div>
-        
-        <!-- About Me Image -->
-        <div class="image-container">
-            <img src="Images/Girl.png" alt="About Me Image" class="extra-image" />
-        </div>
-    </section>    
+    </div>
+    <img src="Images/Girl.png" alt="About Me Image" class="extra-image">
+</section>
 
-    <section id="skills">
+<section id="skills" data-aos="fade-up">
         <h2>Skills</h2>
         
         <!-- Technical Skills -->
         <h3>Technical Skills</h3>
         <ul class="tech-skills">
           <li>
-            <img src="./Images/HTML.png" alt="HTML Icon" class="tech-icon" />
+<img src="./Images/HTML.png" alt="HTML Icon" class="tech-icon" />
             <span>Advanced beginner proficiency in writing structured and semantic HTML for responsive web development.</span>
           </li>
           <li>
-            <img src="./Images/CSS.png" alt="CSS Icon" class="tech-icon" />
+<img src="./Images/CSS.png" alt="CSS Icon" class="tech-icon" />
             <span>Skilled in applying styles, layouts and animations to enhance user experience.</span>
           </li>
           <li>
-            <img src="./Images/Python.png" alt="Python Icon" class="tech-icon" />
+<img src="./Images/Python.png" alt="Python Icon" class="tech-icon" />
             <span>Capable of scripting, automation and data manipulation using Python.</span>
           </li>
           <li>
-            <img src="./Images/Database.png" alt="SQL Icon" class="tech-icon" />
+<img src="./Images/Database.png" alt="SQL Icon" class="tech-icon" />
             <span>Knowledgeable in writing queries and managing relational databases.</span>
           </li>
         </ul>
@@ -77,18 +87,18 @@
         <!-- Professional Skills -->
         <h3>Professional Skills</h3>
         <div class="skills-container">
-          <div class="interest-box"><strong>Social Media Strategy and Analytics:</strong> Expertise in content planning, audience engagement, and performance metrics analysis.</div>
+          <div class="interest-box"><strong>Social Media Strategy and Analytics:</strong> Expertise in content planning, audience engagement and performance metrics analysis.</div>
           <div class="interest-box"><strong>Data Analysis and Visualization:</strong> Skilled in extracting insights from data and presenting findings through reports and dashboards.</div>
-          <div class="interest-box"><strong>Project and Community Management:</strong> Experienced in coordinating initiatives, leading teams, and fostering community engagement.</div>
+          <div class="interest-box"><strong>Project and Community Management:</strong> Experienced in coordinating initiatives, leading teams and fostering community engagement.</div>
           <div class="interest-box"><strong>Research and Report Writing:</strong> Strong ability to conduct in-depth research and compile detailed, data-driven reports.</div>
-          <div class="interest-box"><strong>Communication and Collaboration:</strong> Skilled in written and verbal communication, cross-functional and cross-cultural teamwork, and stakeholder management.</div>
-          <div class="interest-box"><strong>Attention to Detail:</strong> Ensures accuracy, consistency, and quality in tasks; including data management and content creation.</div>
+          <div class="interest-box"><strong>Communication and Collaboration:</strong> Skilled in written and verbal communication, cross-functional and cross-cultural teamwork and stakeholder management.</div>
+          <div class="interest-box"><strong>Attention to Detail:</strong> Ensures accuracy, consistency and quality in tasks; including data management and content creation.</div>
           <div class="interest-box"><strong>Source Control:</strong> Advanced beginner proficiency in Git for version control and collaborative coding.</div>
-          <div class="interest-box"><strong>Creativity and Critical Thinking:</strong> Ability to develop innovative solutions, analyze challenges, and implement strategic improvements.</div>
+          <div class="interest-box"><strong>Creativity and Critical Thinking:</strong> Ability to develop innovative solutions, analyze challenges and implement strategic improvements.</div>
         </div>
     </section>
     
-    <section id="education"> 
+<section id="education" data-aos="fade-up"> 
         <h2>Education</h2>
         <p>Diploma in Community Development and Counselling - Technical University of Mombasa</p>
         <p><a href="Certificates/Diploma Olwal Catherine.pdf" target="_blank" class="cta-button">View Diploma Certificate</a></p>
@@ -143,7 +153,7 @@
         <a href="https://drive.google.com/file/d/11WdsZ9XzdW8lcyj_8Blusly3gedBQCJJ/view?usp=sharing" target="_blank" class="cta-button">Download My CV</a>
     </section>
     
-    <section id="projects"> 
+<section id="projects" data-aos="fade-up"> 
         <h2>Projects</h2>
         <div class="projects-container">
           <div class="project-card">
@@ -177,7 +187,36 @@
         </div>
     </section>    
 
-    <section id="interests">
+<section id="featured-articles" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2>Featured In</h2>
+        <div class="articles-list">
+
+          <article class="article-card">
+            <div class="article-header">
+              <img src="./Images/Nairobi News.png" alt="Nairobi News Logo" class="article-logo" />
+              <h3><a href="https://nairobinews.nation.africa/form-ni-gani-ideathon-competition-closes-at-alliance-francaise/" target="_blank" rel="noopener noreferrer">
+                Nairobi News: Form Ni Gani Ideathon
+              </a></h3>
+            </div>
+            <p>Coverage of the Form Ni Gani Ideathon competition event at Alliance Française, highlighting the winners and innovators.</p>
+          </article>
+
+          <article class="article-card">
+            <div class="article-header">
+              <img src="./Images/Parents Africa.png" alt="Parents Africa Logo" class="article-logo" />
+              <h3><a href="https://parentsafrica.com/ahenda-olwal-sensitising-the-youth-on-contraceptives/" target="_blank" rel="noopener noreferrer">
+                Parents Africa: Ahenda Olwal Sensitising Youth
+              </a></h3>
+            </div>
+            <p>A feature on Ahenda Olwal's advocacy work, educating and empowering youth around contraceptive use and sexual health.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+<section id="interests" data-aos="fade-up">
         <h2>Interests</h2>
         <div class="interests-container">
           <div class="interest-box">
@@ -213,7 +252,7 @@
         </div>
     </section>    
 
-    <section id="contact">
+<section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
         <form id="contact-form">
           <label for="name">Name:</label>
@@ -245,6 +284,6 @@
     <footer>
         <p>&copy; 2025 Ahenda Olwal. All rights reserved.</p>
     </footer>
+    <button class="dark-mode-toggle">Toggle Dark Mode</button>
     </body>
     </html>
-    

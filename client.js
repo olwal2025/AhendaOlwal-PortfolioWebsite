@@ -41,3 +41,21 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         console.error('Error:', error); // Log the error for debugging purposes
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.createElement('button');
+    toggleButton.className = 'dark-mode-toggle';
+    toggleButton.textContent = 'Toggle Dark Mode';
+    document.body.appendChild(toggleButton);
+
+    // Load dark mode preference from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    });
+});
