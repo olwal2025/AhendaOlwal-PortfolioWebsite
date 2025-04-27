@@ -54,7 +54,7 @@ body {
     color: var(--text-color);
     text-align: center;
     line-height: 1.6;
-    padding-top: 70px;
+    padding-top: 90px; /* Increased padding to prevent content being hidden behind navbar */
 }
 
 .navbar {
