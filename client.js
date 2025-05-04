@@ -59,3 +59,28 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observerOptions = {
+        threshold: 0.3
+    };
+
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Optional: remove after animating once
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(revealCallback, observerOptions);
+
+    const aboutSection = document.querySelector(".about-section");
+    const aboutContent = document.querySelector(".about-section .content");
+    const aboutImage = document.querySelector(".about-section .extra-image");
+
+    if (aboutSection) observer.observe(aboutSection);
+    if (aboutContent) observer.observe(aboutContent);
+    if (aboutImage) observer.observe(aboutImage);
+});
