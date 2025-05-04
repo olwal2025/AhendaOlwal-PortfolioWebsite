@@ -56,7 +56,7 @@ html {
 body {
     background: url('Images/Background.png') center/cover no-repeat fixed;
     color: var(--text-color);
-    padding-top: 75px;
+    padding-top: 100px; /* match navbar height */
     text-align: center;
     line-height: 1.6;
     font-size: 1rem; /* Base font size for better scalability */
@@ -64,16 +64,16 @@ body {
 
 /* Navbar */
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--navbar-bg); /* Use desired color from palette */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--navbar-bg);
-    padding: 10px 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px; /* Reduced padding to make the header less tall */
 }
 
 .navbar img {
@@ -101,6 +101,20 @@ body {
     transform: scale(1.1);
 }
 
+/* Ensure the nav element retains its fixed position and responsive design */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--navbar-bg); /* Use theme color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
 /* Sections */
 section {
     max-width: 1200px;
@@ -114,6 +128,7 @@ section {
 
 /* Consistent gaps for flex and grid containers */
 #about {
+    scroll-margin-top: 100px; /* Adjust this value to match or slightly exceed your header height */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -179,6 +194,14 @@ section {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     animation: fadeInSlideRight 1s ease forwards;
     opacity: 0;
+}
+
+#skills,
+#education,
+#projects,
+#interests,
+#contact {
+    scroll-margin-top: 100px; /* Match your header height */
 }
 
 .skills-container {
@@ -613,6 +636,26 @@ footer a:hover {
     footer {
         padding: 20px;
     }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-links a {
+        padding: 0.5rem 0;
+    }
+
+    .toggle-button {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+    }
 }
 
 /* Featured Articles Section */
@@ -854,4 +897,22 @@ footer a:hover {
 #back-to-top:hover {
     background: var(--button-hover-bg);
     transform: scale(1.1);
+}
+
+/* Toggle Button */
+.toggle-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
 }
