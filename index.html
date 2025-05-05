@@ -13,6 +13,9 @@
   <script src="client.js" defer></script>
 </head>
 <body>
+  <div style="background-color: yellow; color: black; text-align: center; padding: 10px; font-weight: bold;">
+    The website is under construction.
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -34,7 +37,7 @@
                     <li><a href="#contact" aria-label="Contact Me">CONTACT</a></li>
                 </ul>
             </nav>
-    
+
             <!-- Hamburger menu for mobile -->
             <div class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation">
                 <span class="bar"></span>
@@ -291,7 +294,6 @@
     <footer>
         <p>&copy; 2025 Ahenda Olwal. All rights reserved.</p>
     </footer>
-    <button class="dark-mode-toggle">Toggle Dark Mode</button>
     <button id="back-to-top" aria-label="Back to Top">↑</button>
     <script>
       const backToTopButton = document.getElementById('back-to-top');
@@ -337,6 +339,13 @@
           if (!isValid) {
               e.preventDefault();
           }
+      });
+
+      const hamburgerMenu = document.getElementById('hamburger-menu');
+      const navMenu = document.getElementById('nav-menu');
+
+      hamburgerMenu.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
       });
     </script>
     </body>

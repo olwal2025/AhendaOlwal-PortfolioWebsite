@@ -71,28 +71,29 @@ body {
     background-color: var(--navbar-bg); /* Use desired color from palette */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px; /* Reduced padding to make the header less tall */
+    align-items: center; /* Align items horizontally */
+    justify-content: space-between; /* Space between logo and navigation */
+    padding: 10px 20px; /* Adjust padding for better spacing */
 }
 
 .navbar img {
     width: 100px;
+    margin-right: auto; /* Push navigation links to the right */
 }
 
 .navbar ul {
     display: flex;
-    gap: 20px;
-}
-
-.navbar ul li {
-    list-style: none;
+    gap: 20px; /* Space between navigation links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points */
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: var(--background-color);
     font-weight: bold;
+    padding: 5px 10px; /* Add padding for better click area */
     transition: color 0.4s ease, transform 0.3s ease;
 }
 
@@ -115,6 +116,23 @@ nav {
     flex-wrap: wrap;
 }
 
+.hamburger-menu {
+    display: none; /* Always hide the hamburger menu */
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--background-color);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
 /* Sections */
 section {
     max-width: 1200px;
@@ -127,8 +145,16 @@ section {
 }
 
 /* Consistent gaps for flex and grid containers */
+#about,
+#skills,
+#education,
+#projects,
+#interests,
+#contact {
+    scroll-margin-top: 100px; /* Match your header height */
+}
+
 #about {
-    scroll-margin-top: 100px; /* Adjust this value to match or slightly exceed your header height */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -194,14 +220,6 @@ section {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     animation: fadeInSlideRight 1s ease forwards;
     opacity: 0;
-}
-
-#skills,
-#education,
-#projects,
-#interests,
-#contact {
-    scroll-margin-top: 100px; /* Match your header height */
 }
 
 .skills-container {
@@ -623,7 +641,7 @@ footer a:hover {
     }
 
     .navbar ul {
-        flex-direction: column;
+        flex-direction: column; /* Ensure the navigation menu is visible */
         gap: 15px;
     }
 
@@ -655,6 +673,21 @@ footer a:hover {
     .toggle-button {
         align-self: flex-end;
         margin-top: 0.5rem;
+    }
+
+    #nav-menu {
+        display: flex; /* Remove hidden state for the navigation menu */
+        flex-direction: column;
+        background-color: var(--navbar-bg);
+        position: static; /* Remove absolute positioning */
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: none; /* Remove shadow */
+    }
+
+    #nav-menu li {
+        text-align: center;
+        padding: 10px 0;
     }
 }
 
@@ -740,28 +773,6 @@ footer a:hover {
 
 .dark-mode footer a:hover {
     color: var(--link-hover-color);
-}
-
-/* Dark Mode Toggle Button */
-.dark-mode-toggle {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    background: var(--button-bg);
-    color: var(--detail-color);
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    z-index: 1100;
-}
-
-.dark-mode-toggle:hover {
-    background: var(--button-hover-bg);
-    transform: scale(1.05);
 }
 
 .article-header {
